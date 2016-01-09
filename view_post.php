@@ -26,7 +26,7 @@
                     $data = mysqli_fetch_array($result);
                     $username = $data['username'];
                     $password = $data['userpass'];
-                    $sql = "Select * from posts where user_id =".$userid;
+                    $sql = "Select * from posts";
                     $result = mysqli_query($con,$sql) or die(mysqli_error($con));
 
                     while($data = mysqli_fetch_array($result))
